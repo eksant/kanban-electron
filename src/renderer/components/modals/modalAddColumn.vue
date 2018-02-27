@@ -1,0 +1,41 @@
+<template>
+  <v-layout row justify-center>
+    <v-dialog v-model='showAddColumnModal' max-width='750px'>
+      <v-card>
+        <!-- Add column modal toolbar -->
+        <v-toolbar>
+          <v-toolbar-title>Add Column</v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-btn icon flat @click='showAddColumnModal = !showAddColumnModal'>
+            <v-icon>close</v-icon>
+          </v-btn>
+        </v-toolbar>
+
+        <!-- Add column modal content -->
+        <v-card>
+          <v-container grid-list-md text-xs-center>
+            <v-layout row wrap>
+              <v-flex xs4 v-for='i in 9' :key='i'>
+                <v-card color='primary'>
+                  <v-card-text class='px-0'>4</v-card-text>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-card>
+      </v-card>
+    </v-dialog>
+  </v-layout>
+</template>
+
+<script>
+import modalsStore from '../../store/modules/modals'
+
+export default {
+  data () {
+    return {
+      showAddColumnModal: modalsStore.state.showAddColumnModal
+    }
+  }
+}
+</script>

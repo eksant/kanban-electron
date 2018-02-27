@@ -1,0 +1,41 @@
+{
+  "columns": [
+    {
+      "id": "column-0",
+      "icon": "home",
+      "title": "Open Task",
+      "username": "username",
+      "supplier": {
+        "name": "timelines/home",
+        "data": {
+          "for_user": "TODO"
+        }
+      },
+      "order": 0
+    },
+    {
+      "id": "column-1",
+      "icon": "notifications",
+      "title": "In Progress",
+      "username": "username",
+      "supplier": "_test/dummy-default",
+      "order": 1
+    },
+    {
+      "id": "column-2",
+      "icon": "rss_feed",
+      "title": "Done",
+      "username": "username",
+      "supplier": "_test/dummy-default",
+      "order": 2
+    },
+    {
+      "id": "column-3",
+      "icon": "person",
+      "title": "Reject",
+      "username": "username",
+      "supplier": "_test/dummy-default",
+      "order": 3
+    }
+  ]
+}
